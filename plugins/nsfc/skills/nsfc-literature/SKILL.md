@@ -94,9 +94,9 @@ uv run scripts/generate_references.py refs.txt --format bibtex --output refs.bib
 
 **refs.txt 格式**（每行一个标识符）：
 ```
-10.1103/PhysRevLett.120.143001
-10.1038/s41586-020-2242-8
-arXiv:2304.09423
+10.XXXX/journal.XXX.XXXXXX
+10.XXXX/sXXXXX-XXX-XXXX-X
+arXiv:XXXX.XXXXX
 ```
 
 ### NSFC引用格式
@@ -194,7 +194,7 @@ NSFC申请书通常使用**编号引用格式** [1], [2], ...
 
 ### wenxian报错？
 - 确认 `uvx` 已安装（`uv` 的一部分）
-- 确认DOI格式正确（如 `10.1038/s41586-020-2242-8`）
+- 确认DOI格式正确（如 `10.XXXX/sXXXXX-XXX-XXXX-X`）
 - 部分API可能需要网络代理，请根据本地环境配置
 
 ### 格式不统一？

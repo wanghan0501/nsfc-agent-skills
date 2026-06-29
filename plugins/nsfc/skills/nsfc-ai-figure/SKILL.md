@@ -161,7 +161,7 @@ uv run scripts/generate_image.py --prompt "..." -o c1.png --variants 4
 - `--base` 切换节点（**默认国内 `https://grsai.dakka.com.cn`**，国内延迟低约 15×；海外加 `--base https://grsaiapi.com`）
 - 异步任务自动轮询（默认超时 300s，`--timeout` 调整）
 - `--images` 接受 http(s) URL；本地路径需先上传至可公网访问地址再传 URL
-- `--variants N` 并发生成 N 张供挑选
+- `--variants N` 连续生成 N 张供挑选
 
 ---
 
