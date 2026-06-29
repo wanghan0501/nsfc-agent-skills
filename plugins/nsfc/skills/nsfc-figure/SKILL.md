@@ -1,7 +1,7 @@
 ---
 name: nsfc-figure
 description: NSFC申请书图表制作指南（代码绘图）。用Mermaid/matplotlib制作技术路线图、研究内容关系图、关键科学问题逻辑图、甘特图等逻辑性强、文字标签精确的图表，以及承载真实数据的研究基础图。仅开篇领域/应用场景的示意性概念插画可改用 nsfc-ai-figure（AI文生图，可选、须声明）；精确的机理/结构/数据图不要交给AI。
-version: 0.1.0
+version: 0.2.0
 ---
 
 # NSFC 申请书图表制作指南

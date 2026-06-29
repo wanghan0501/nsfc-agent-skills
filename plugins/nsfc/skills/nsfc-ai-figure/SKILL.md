@@ -1,7 +1,7 @@
 ---
 name: nsfc-ai-figure
 description: NSFC申请书AI绘图指南（可选，仅用于示意性视觉润色）。通过Grsai文生图API（nano-banana-pro / gpt-image-2）生成开篇领域/应用场景概念插画等以视觉表达为主、不承载精确科学结论的背景图。含提示词模板、API脚本与合规边界。主推开篇概念图；机理/材料/器件等精确结构图为高风险，须专家核对或改用真实数据/手绘。逻辑/流程/关系/甘特图请用 nsfc-figure。AI生成的图须按NSFC规范声明（见 nsfc-policy）。
-version: 0.1.0
+version: 0.2.0
 ---
 
 # NSFC 申请书 AI 绘图指南
