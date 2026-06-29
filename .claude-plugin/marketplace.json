@@ -12,7 +12,7 @@
     {
       "name": "nsfc",
       "source": "./plugins/nsfc",
-      "description": "NSFC 申请书撰写辅助技能包：写作指导、图表制作、文献检索、政策速查。",
+      "description": "NSFC 申请书撰写辅助技能包：写作指导、图表制作（代码绘图 + AI 文生图）、文献检索、政策速查。",
       "category": "writing",
       "keywords": ["nsfc", "国家自然科学基金", "申请书"]
     }

@@ -1,7 +1,7 @@
 {
   "name": "nsfc",
   "version": "0.1.0",
-  "description": "NSFC 申请书撰写辅助技能包：覆盖写作指导、图表制作、文献检索与政策速查 4 个技能。",
+  "description": "NSFC 申请书撰写辅助技能包：覆盖写作指导、图表制作（代码绘图 + AI 文生图）、文献检索与政策速查 5 个技能。",
   "author": {
     "name": "Han Wang",
     "url": "https://github.com/wanghan0501/nsfc-agent-skills"

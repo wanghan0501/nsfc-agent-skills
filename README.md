@@ -4,12 +4,13 @@
 
 ## 📦 技能包概览
 
-本项目包含 4 个专业技能，每个技能都可以独立使用：
+本项目包含 5 个专业技能，每个技能都可以独立使用：
 
 | 技能名称 | 功能简介 | 适用场景 |
 |---------|---------|---------|
 | **[nsfc-write](./plugins/nsfc/skills/nsfc-write/SKILL.md)** | NSFC 申请书撰写指南 | 选题、摘要、立项依据、研究内容、研究方案、创新性分析等各部分撰写 |
 | **[nsfc-figure](./plugins/nsfc/skills/nsfc-figure/SKILL.md)** | NSFC 申请书图表制作指南 | 概念图、技术路线图、研究内容关系图、甘特图等专业图表制作 |
+| **[nsfc-ai-figure](./plugins/nsfc/skills/nsfc-ai-figure/SKILL.md)** | NSFC 申请书 AI 绘图指南（可选） | 文生图 API 生成概念示意图、机理插画、材料/器件结构图、应用场景效果图等视觉为主的插画 |
 | **[nsfc-literature](./plugins/nsfc/skills/nsfc-literature/SKILL.md)** | NSFC 申请书文献检索与引用 | 使用 OpenAlex API 检索文献，使用 wenxian 生成标准引用格式 |
 | **[nsfc-policy](./plugins/nsfc/skills/nsfc-policy/SKILL.md)** | NSFC 2026 年度申报政策速查 | 限项规定、AI 使用规范、申请代码、项目类型、结构改革等政策信息 |
 
@@ -21,7 +22,7 @@
 
 ## 🧩 在 Claude Code 中安装（Plugin 市场）
 
-本仓库同时是一个 Claude Code 插件市场（marketplace），4 个技能打包为名为 `nsfc` 的插件。
+本仓库同时是一个 Claude Code 插件市场（marketplace），5 个技能打包为名为 `nsfc` 的插件。
 
 ### 安装步骤
 
@@ -60,6 +61,7 @@
 
 - “帮我写青年基金的立项依据”→ 触发 `nsfc-write`
 - “画一张技术路线图”→ 触发 `nsfc-figure`
+- “帮我生成一张机理示意图/概念插画”→ 触发 `nsfc-ai-figure`（文生图，需配置 `GRSAI_API_KEY`）
 - “检索这个方向近 5 年的代表文献”→ 触发 `nsfc-literature`
 
 ### 卸载
