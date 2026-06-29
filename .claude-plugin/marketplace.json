@@ -1,0 +1,20 @@
+{
+  "name": "nsfc-agent-skills",
+  "owner": {
+    "name": "Han Wang",
+    "url": "https://github.com/wanghan0501/nsfc-agent-skills"
+  },
+  "metadata": {
+    "description": "NSFC 申请书撰写辅助技能市场",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "nsfc",
+      "source": "./plugins/nsfc",
+      "description": "NSFC 申请书撰写辅助技能包：写作指导、图表制作、文献检索、政策速查。",
+      "category": "writing",
+      "keywords": ["nsfc", "国家自然科学基金", "申请书"]
+    }
+  ]
+}
