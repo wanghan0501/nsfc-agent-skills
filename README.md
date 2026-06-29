@@ -1,6 +1,6 @@
 # NSFC申请书撰写辅助智能体技能包
 
-这是一个专为 NSFC 申请书撰写设计的 Agent Skills 集合，帮助科研人员提高申请书质量，涵盖写作指导、图表制作、文献管理和政策速查等核心环节。
+这是一个专为 NSFC 申请书撰写设计的 Agent Skills 集合，帮助科研人员提高申请书质量，涵盖写作指导、图表制作（代码绘图 + 可选 AI 文生图）、文献管理和政策速查等核心环节。
 
 ## 📦 技能包概览
 
@@ -10,7 +10,7 @@
 |---------|---------|---------|
 | **[nsfc-write](./plugins/nsfc/skills/nsfc-write/SKILL.md)** | NSFC 申请书撰写指南 | 选题、摘要、立项依据、研究内容、研究方案、创新性分析等各部分撰写 |
 | **[nsfc-figure](./plugins/nsfc/skills/nsfc-figure/SKILL.md)** | NSFC 申请书图表制作指南 | 概念图、技术路线图、研究内容关系图、甘特图等专业图表制作 |
-| **[nsfc-ai-figure](./plugins/nsfc/skills/nsfc-ai-figure/SKILL.md)** | NSFC 申请书 AI 绘图指南（可选） | 文生图 API 生成概念示意图、机理插画、材料/器件结构图、应用场景效果图等视觉为主的插画 |
+| **[nsfc-ai-figure](./plugins/nsfc/skills/nsfc-ai-figure/SKILL.md)** | NSFC 申请书 AI 绘图指南（可选，视觉润色） | 文生图 API 生成**开篇领域/应用场景概念插画**等示意性背景图；机理/结构等精确图为高风险须慎用，AI 图须按规范声明 |
 | **[nsfc-literature](./plugins/nsfc/skills/nsfc-literature/SKILL.md)** | NSFC 申请书文献检索与引用 | 使用 OpenAlex API 检索文献，使用 wenxian 生成标准引用格式 |
 | **[nsfc-policy](./plugins/nsfc/skills/nsfc-policy/SKILL.md)** | NSFC 2026 年度申报政策速查 | 限项规定、AI 使用规范、申请代码、项目类型、结构改革等政策信息 |
 
@@ -57,12 +57,13 @@
 
 ### 安装后如何使用
 
-安装后**无需手动调用**——撰写 NSFC 申请书时，Claude 会根据任务自动选用对应技能（写作 / 图表 / 文献 / 政策）。直接描述需求即可，例如：
+安装后**无需手动调用**——撰写 NSFC 申请书时，Claude 会根据任务自动选用对应技能（写作 / 代码绘图 / AI 绘图 / 文献 / 政策）。直接描述需求即可，例如：
 
 - “帮我写青年基金的立项依据”→ 触发 `nsfc-write`
-- “画一张技术路线图”→ 触发 `nsfc-figure`
-- “帮我生成一张机理示意图/概念插画”→ 触发 `nsfc-ai-figure`（文生图，需配置 `GRSAI_API_KEY`）
+- “画一张技术路线图/研究内容关系图”→ 触发 `nsfc-figure`
+- “生成一张开篇的领域概念/应用场景插画”→ 触发 `nsfc-ai-figure`（文生图，需配置 `GRSAI_API_KEY`，且须按规范声明 AI 使用）
 - “检索这个方向近 5 年的代表文献”→ 触发 `nsfc-literature`
+- “青年基金 C 类的限项和 AI 使用规范是什么”→ 触发 `nsfc-policy`
 
 ### 卸载
 
